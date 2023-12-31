@@ -14,7 +14,6 @@ SELECT
   attendance,
   home_club_position,
   away_club_position,
-  stadium
+  stadium,
 FROM
   football_bdo_inf.games
-  -- terminar o left join, pensar numa maneira de colocar os cartões 

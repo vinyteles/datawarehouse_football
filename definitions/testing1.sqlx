@@ -10,7 +10,7 @@ SELECT
 FROM
   football_bdo_inf.game_events AS ge
 WHERE
-  ge.type = "Cards"
+  ge.type = "Cards" AND ge.game_id = 2218677
 GROUP BY
   game_id,
   club_id
