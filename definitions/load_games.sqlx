@@ -16,7 +16,5 @@ SELECT
   away_club_position,
   stadium
 FROM
-  football_bdo_inf.games games
-LEFT JOIN 
-  ${ref("load_cards")} cards
+  football_bdo_inf.games
   -- terminar o left join, pensar numa maneira de colocar os cartões 
