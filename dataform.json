@@ -1,0 +1,8 @@
+{
+  "defaultSchema": "football_dw_inf",
+  "assertionSchema": "dataform_assertions",
+  "warehouse": "bigquery",
+  "defaultDatabase": "dw-inf",
+  "defaultLocation": "southamerica-east1"
+}
+    

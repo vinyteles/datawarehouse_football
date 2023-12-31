@@ -1,0 +1,22 @@
+config {
+    type: "table",
+    name: "testgames1"
+}
+
+SELECT
+  game_id,
+  competition_id,
+  date,
+  home_club_id,
+  away_club_id,
+  home_club_goals,
+  away_club_goals,
+  attendance,
+  home_club_position,
+  away_club_position,
+  stadium
+FROM
+  football_bdo_inf.games games
+LEFT JOIN 
+  ${ref("load_cards")} cards
+  -- terminar o left join, pensar numa maneira de colocar os cartões 

@@ -1,0 +1,12 @@
+config {
+    type: "view"
+}
+
+SELECT
+  game_id,
+  club_id,
+  ${utils.format_description("description")} AS cards
+FROM
+  football_bdo_inf.game_events AS ge
+WHERE
+  ge.type = "Cards"

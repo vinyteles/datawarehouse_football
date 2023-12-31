@@ -1,0 +1,10 @@
+config {
+    type: "table",
+    name: "testcompetitions1"
+}
+
+SELECT
+  club_id,
+  name
+FROM
+  football_bdo_inf.clubs
