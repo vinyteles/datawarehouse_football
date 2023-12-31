@@ -3,16 +3,7 @@ config {
 }
 
 SELECT
-  game_id,
-  club_id,
-  COUNT(${utils.is_yellow("description")}) AS yellow_cards,
-  COUNT(${utils.is_red("description")}) AS red_cards
+  *
 FROM
-  football_bdo_inf.game_events AS ge
-WHERE
-  ge.type = "Cards" AND ge.game_id = 2218677
-GROUP BY
-  game_id,
-  club_id
-ORDER BY
-  game_id
+  ${ref("load_cards")}
+WHERE game_id = 2225451

@@ -1,6 +1,6 @@
 config {
     type: "table",
-    name: "testgames1"
+    name: "games"
 }
 
 SELECT
@@ -15,5 +15,9 @@ SELECT
   home_club_position,
   away_club_position,
   stadium,
+  ${utils.mapping_cards_to_game("yellow", "home")} AS home_yellow_cards,
+  ${utils.mapping_cards_to_game("yellow", "away")} AS away_yellow_cards,
+  ${utils.mapping_cards_to_game("red", "home")} AS home_red_cards,
+  ${utils.mapping_cards_to_game("yellow", "away")} AS away_red_cards
 FROM
-  football_bdo_inf.games
+  football_bdo_inf.games g

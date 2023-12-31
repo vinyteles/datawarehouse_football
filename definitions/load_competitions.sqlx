@@ -1,6 +1,6 @@
 config {
     type: "table",
-    name: "testcompetitions1"
+    name: "competitions"
 }
 
 SELECT
